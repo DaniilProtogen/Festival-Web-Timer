@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Настройка таймера</title>
+  <style>
+    body {
+      background: black;
+      color: #0f0;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input {
+      font-size: 2rem;
+      width: 4rem;
+      text-align: center;
+      background: black;
+      color: #0f0;
+      border: 2px solid #0f0;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      background: #0f0;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+    button:hover {
+      background: #0c0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Настройка таймера GrandMA2</h1>
+  <form action="/timer" method="get">
+    <input type="number" name="h" min="0" max="99" value="0" required> :
+    <input type="number" name="m" min="0" max="59" value="0" required> :
+    <input type="number" name="s" min="0" max="59" value="0" required>
+    <button type="submit">Старт</button>
+  </form>
+</body>
+</html>

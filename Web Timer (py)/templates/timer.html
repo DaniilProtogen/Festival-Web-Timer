@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Таймер GrandMA2</title>
+  <style>
+    @font-face {
+      font-family: 'DSEG7Modern';
+      src: url('https://cdn.jsdelivr.net/fontsource/fonts/dseg7-modern@latest/latin-400-normal.woff2') format('woff2');
+    }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      overflow: hidden;
+    }
+    #timer {
+      font-family: 'DSEG7Modern', monospace;
+      font-size: 15vw;
+      color: #00ff00;
+      letter-spacing: 0.1em;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: geometricPrecision;
+      text-shadow:
+        0 0 2px #00ff00,
+        0 0 4px #00ff00;
+    }
+    #controls {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+    button {
+      background: #0f0;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0c0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="timer">--:--:--</div>
+<div id="controls">
+  <button id="startStopBtn">Пауза</button>
+  <button id="fullscreenBtn">Во весь экран</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+</body>
+</html>
