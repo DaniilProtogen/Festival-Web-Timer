@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Festival Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div id="setup">
+    <h1>Set Timer</h1>
+    <input id="h" type="number" min="0" max="99" placeholder="Hour" />
+    <input id="m" type="number" min="0" max="59" placeholder="Min" />
+    <input id="s" type="number" min="0" max="59" placeholder="Sec" />
+    <button id="start">Start</button>
+  </div>
+
+  <div id="timerScreen" style="display: none;">
+    <button id="stop">Stop</button>
+    <div id="timer">--:--:--</div>
+  </div>
+
+  <script src="timer.js"></script>
+</body>
+</html>
