@@ -8,7 +8,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0 (PY)   | :white_check_mark: |
-| 2.0 (Node)   | :Mabey:                |
+| 2.0 (Node)   | :x:                |
 
 
 ## Reporting a Vulnerability
